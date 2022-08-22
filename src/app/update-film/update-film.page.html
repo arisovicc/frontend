@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Zelis da izmenis film?</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+<ion-list lines="full"></ion-list>
+<ion-item>
+  <ion-label position ="floating">Naziv Filma</ion-label>
+  <ion-input [(ngModel)]="nazivFilma" type="text"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position ="floating">Godina</ion-label>
+  <ion-input [(ngModel)]="godina" type="text"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position ="floating">Ocena</ion-label>
+  <ion-input [(ngModel)]="ocena" type="text"></ion-input>
+</ion-item>
+<ion-row>
+  <ion-col>
+    <ion-button type="button" (click)="updateFilm()" 
+    color="primary" shape="full" expand="block">
+    Izmeni film
+    </ion-button>
+  </ion-col>
+</ion-row>
+
+
+</ion-content>
